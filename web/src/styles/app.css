@@ -1,0 +1,165 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+  padding: 36px 44px 90px;
+  overflow-y: auto;
+}
+
+.view {
+  display: none;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.view.active {
+  display: block;
+  animation: fadein 0.35s ease;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.view-section {
+  display: block;
+}
+
+.view-header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0 0 8px;
+  letter-spacing: -0.5px;
+}
+
+.lede {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  margin: 0;
+  max-width: 520px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+input[type='text'],
+input[type='date'],
+textarea {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 11px 13px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+input[type='text']:focus,
+input[type='date']:focus,
+textarea:focus {
+  border-color: var(--primary);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #0a0a0a;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 11px 18px;
+  border-radius: 10px;
+  transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.08);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.btn-ghost:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.mobile-topbar {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  main {
+    padding: 20px 16px 90px;
+  }
+
+  .mobile-topbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 22px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-topbar .mark {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
