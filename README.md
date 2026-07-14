@@ -7,7 +7,7 @@ Uma aplicação web moderna de produtividade e estudo, construída com **React**
 - **📋 Metas**: Crie metas com subtarefas e acompanhe o progresso em tempo real
 - **⏱️ Pomodoro**: Timer de 25 minutos para sessões de foco + pausas
 - **🧠 Método Feynman**: Aprenda a explicar conceitos de forma simples e clara
-- **🤖 Chat IA**: Tire dúvidas com uma IA tutor em tempo real
+- **🤖 Chat IA**: Tire dúvidas com uma IA tutor em tempo real(Em breve...)
 - **💾 Armazenamento Local**: Seus dados são salvos automaticamente no navegador
 
 ## 📁 Estrutura do Projeto
